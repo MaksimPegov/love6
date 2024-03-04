@@ -1,0 +1,26 @@
+@mixin page-input {
+  background-color: $white !important;
+  border: 1px solid $light-gray;
+  width: -webkit-fill-available;
+
+  > input:-webkit-autofill,
+  > input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+  > input[data-autocompleted] {
+    background-color: transparent !important;
+  }
+
+  > input {
+    color: $text-color;
+    padding: 5px 10px !important;
+  }
+
+  &_error {
+    border: 1px solid $red !important;
+  }
+
+  &_disabled {
+    border: 1px solid $super-light-gray !important;
+  }
+}

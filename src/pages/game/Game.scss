@@ -1,0 +1,69 @@
+@import 'src/styles/styles.scss';
+
+.Game {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  // align-items: center;
+
+  &-Back {
+    width: fit-content !important;
+    position: absolute !important;
+    bottom: 91% !important;
+    margin: 15px !important;
+  }
+
+  &-Title {
+    font-size: 30px !important;
+    margin: 20px auto 0 auto !important;
+    color: $text-color;
+  }
+
+  &-Subtitle {
+    font-size: 20px !important;
+    margin: 0px auto 20px auto !important;
+    color: $text-color;
+    text-align: center;
+  }
+
+  &-Text {
+    margin: 0 auto !important;
+    color: $text-color;
+    text-align: center;
+  }
+
+  &-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto 0 auto !important;
+  }
+
+  &-Inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+  }
+
+  &-Input {
+    margin: 10px auto !important;
+    width: 80% !important;
+    max-width: 400px;
+  }
+
+  &-Button {
+    margin: -2px auto 5px auto !important;
+    font-size: 16px !important;
+  }
+
+  &-Result {
+    display: flex;
+  }
+
+  &-Img {
+    width: 300px;
+    margin: auto !important;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,107 @@
+@import 'src/styles/styles.scss';
+
+.Alinka {
+  margin: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  &-Back {
+    width: fit-content !important;
+    position: absolute !important;
+    bottom: 91% !important;
+    margin: 15px !important;
+  }
+
+  &-Title1 {
+    color: $text-color;
+    margin: 25px auto 15px auto;
+  }
+
+  &-Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  &-Time {
+    font-size: 25px;
+    color: $text-color;
+
+    &_days {
+      font-weight: 400;
+    }
+    &_hours {
+      font-weight: 300;
+    }
+    &_minutes {
+      font-weight: 200;
+    }
+    &_seconds {
+      font-weight: 100;
+    }
+  }
+
+  &-Img {
+    width: 300px;
+    border-radius: 35px;
+    box-shadow: 1px 1px 6px -2px grey;
+    padding: 0px;
+    margin: 10px auto;
+  }
+
+  &-Refresh {
+    width: fit-content !important;
+    margin: 15px auto 10px auto !important;
+  }
+
+  &-Progress {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 15px !important;
+  }
+
+  &-Bottom {
+    margin: 10px auto 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-Inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-Error {
+    align-self: flex-end;
+  }
+
+  &-ErrorText {
+    color: $text-color !important;
+    font-size: 15px !important;
+    padding: 5px !important;
+  }
+
+  &-Next {
+    width: fit-content !important;
+    margin: auto auto 20px auto !important;
+  }
+
+  &-Text {
+    color: $text-color;
+    font-size: 20px !important;
+    margin: 0;
+  }
+
+  &-Message {
+    color: $text-color;
+    margin: auto !important;
+    text-align: center;
+  }
+}

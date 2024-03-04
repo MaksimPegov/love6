@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: alinka-frontend
+    restart: always
+    image: maksimpegov/alinka-frontend:latest
+    ports:
+      - '3333:3333'
